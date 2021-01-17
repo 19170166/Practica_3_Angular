@@ -1,0 +1,34 @@
+.text-rojo{
+    color: rgb(173, 47, 47);
+}
+
+.btn-rojo{
+    background: rgb(196, 62, 62);
+    color:whitesmoke;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.btn-azul{
+    background: rgb(64, 62, 196);
+    color:whitesmoke;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.contenedor{
+    margin: auto;
+    float: left;
+    border: 3px solid rgb(192, 58, 58);
+    border-radius: 5px;
+    padding: 15px;
+    background: whitesmoke;
+    margin:10px;
+}
+
+.mostrar{
+    visibility: visible;
+}
+.ocultar{
+    visibility: hidden;
+}

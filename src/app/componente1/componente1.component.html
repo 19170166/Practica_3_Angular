@@ -1,0 +1,12 @@
+<h2>Lista de Productos</h2>
+<div class="contenedor">
+    <p *ngFor="let producto of lista" (click)="onSelect(producto)">{{producto.id}} - {{producto.prod}}</p>
+</div>
+<div class="contenedor" *ngIf="selectProd" [ngClass]="visible ? 'mostrar':'ocultar'">
+    <h3>Producto</h3>
+    <h4>{{selectProd.prod | uppercase }} ID: {{selectProd.id}}</h4>
+    <label>Nombre: 
+        <input [(ngModel)]="selectProd.prod" placeholder="nombre">
+    </label>
+</div>
+<button type="button" class="btn-rojo" (click)="ocultar()" [ngClass]="btndet ? 'btn-rojo':'btn-azul'"></button>
